@@ -3,6 +3,11 @@
 Each version has a one-line summary (used for the Discord announcements and the release list)
 followed by the details.
 
+## 1.9.4 - 2026-11-21 - Exact resizing on the cockpit tablet
+- The EFB fills the calibrated area corner to corner: Narrower / Wider and Shorter / Taller each change exactly by the step (it used to keep the iPad's shape, so some presses did nothing and then it jumped)
+- Finer steps: 0.5, 2, 8 and 32 texture pixels; the exact size is shown
+- The AviTab button is now "Draw in the ToLiSS AviTab area", says it's only for the tablet's AviTab page, and has "Back to my calibration"
+
 ## 1.9.3 - 2026-11-21 - Exact cockpit screen from AviTab.json, arrow keys
 - Settings > Cockpit > Use the ToLiSS AviTab screen: the exact tablet area from the aircraft's AviTab.json (built in for every ToLiSS type)
 - Fine tune: Up / Left / Down / Right laid out like arrow keys; resizing keeps the picture centred instead of sliding it

@@ -60,19 +60,21 @@ The EFB can replace the picture on the aircraft's own cockpit tablet. It draws i
 aircraft's panel texture, over the screen you calibrate, and you use it by clicking on the
 3D tablet as usual.
 
-**Exact, no calibration:** *Settings → Cockpit → Use the ToLiSS AviTab screen*. ToLiSS reserves an area of its
-tablet for AviTab (`AviTab.json` in the aircraft folder; built in when it's missing: A319/A320/A321 left 2119,
-bottom 9, A330-900/A340-600 left 142, bottom 16, both 1024 × 640). Put the ToLiSS tablet on its AviTab page and
-turn AviTab off (*Plugins → AviTab → Enabled*), so only the EFB draws there.
+**On the tablet's AviTab page instead:** *Settings → Cockpit → Draw in the ToLiSS AviTab area* uses the area
+ToLiSS reserves for AviTab (`AviTab.json` in the aircraft folder; built in when it's missing: A319/A320/A321 left
+2119, bottom 9, A330-900/A340-600 left 142, bottom 16, both 1024 × 640). The EFB then shows only on the ToLiSS
+tablet's AviTab page, not on its normal screen; turn AviTab off (*Plugins → AviTab → Enabled*). *Back to my
+calibration* undoes it.
 
-Or calibrate it yourself:
+On the tablet's normal screen, calibrate once:
 
 1. Sit in the 3D cockpit, looking at the tablet so its whole screen is visible.
 2. **Plugins → ToLiSS EFB → Auto-calibrate cockpit tablet...** (or *Settings → Cockpit → Auto calibrate*).
 3. **Press and hold** the mouse on the tablet's screen and scribble back and forth **past all four
    edges**, then let go. The plugin fits the screen's position and rotation from that one gesture.
 4. If the edges are a little off, nudge them in *Settings → Cockpit → Fine tune* (arrow keys to move; Narrower /
-   Wider / Shorter / Taller resize around the centre, so the picture stays where it is). If auto
+   Wider / Shorter / Taller resize around the centre, in steps down to half a texture pixel). The EFB fills the
+   calibrated area corner to corner, so width and height each change exactly by the step. If auto
    calibration doesn't find the screen, the menu also has a manual mode: click the top-left
    corner, then the bottom-right one.
 
