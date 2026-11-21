@@ -3,6 +3,12 @@
 Each version has a one-line summary (used for the Discord announcements and the release list)
 followed by the details.
 
+## 1.9.7 - 2026-11-21 - Startup page, new map, real CPDLC and telex
+- Ground Ops > Startup: live engine and APU gauges, power lights, the start sequence, quick starts and aircraft states (found on the aircraft by name, else they open the ISCS)
+- Ground Ops redesigned: door and service tiles; the BULK door works; no more false "door didn't move" warnings
+- Map: light chart by day, glowing route, airliner symbol with a 2-minute track line, new info card with progress, scale bar and north arrow
+- AOC: messages look like real ACARS printouts; real telex and CPDLC from Hoppie's ACARS network arrive in the inbox (Airline > Website > ACARS NETWORK); send telex to any station
+
 ## 1.9.6 - 2026-11-21 - AviTab option removed
 - Removed "Draw in the ToLiSS AviTab area": fit the EFB on the tablet's own screen with Fit on the tablet instead
 
