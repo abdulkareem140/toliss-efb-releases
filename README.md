@@ -60,13 +60,20 @@ The EFB can replace the picture on the aircraft's own cockpit tablet. It draws i
 aircraft's panel texture, over the screen you calibrate, and you use it by clicking on the
 3D tablet as usual.
 
+**Fit it on the tablet (easiest):** *Settings → Cockpit → Fit on the tablet: drag the corners* (or *Plugins →
+ToLiSS EFB → Fit cockpit tablet*). Orange handles appear on the 3D tablet: drag each corner (or an edge) to the edge
+of the tablet's screen, drag the middle to move it, **ROTATE** if it's sideways, then **DONE**. The EFB fills that
+area edge to edge. The first time on a new type, just click the middle of the screen and drag from there.
+
+![Fit on the tablet](docs/screenshots/cockpit_edit.png)
+
 **On the tablet's AviTab page instead:** *Settings → Cockpit → Draw in the ToLiSS AviTab area* uses the area
 ToLiSS reserves for AviTab (`AviTab.json` in the aircraft folder; built in when it's missing: A319/A320/A321 left
 2119, bottom 9, A330-900/A340-600 left 142, bottom 16, both 1024 × 640). The EFB then shows only on the ToLiSS
 tablet's AviTab page, not on its normal screen; turn AviTab off (*Plugins → AviTab → Enabled*). *Back to my
 calibration* undoes it.
 
-On the tablet's normal screen, calibrate once:
+Or calibrate with a gesture:
 
 1. Sit in the 3D cockpit, looking at the tablet so its whole screen is visible.
 2. **Plugins → ToLiSS EFB → Auto-calibrate cockpit tablet...** (or *Settings → Cockpit → Auto calibrate*).

@@ -3,6 +3,11 @@
 Each version has a one-line summary (used for the Discord announcements and the release list)
 followed by the details.
 
+## 1.9.5 - 2026-11-21 - Fit the EFB right on the tablet
+- Edit mode on the 3D tablet: drag the corners or edges to the screen's edges, the middle to move it, ROTATE, DONE - the EFB fills it edge to edge
+- Start it from Settings > Cockpit > Fit on the tablet, or Plugins > ToLiSS EFB > Fit cockpit tablet
+- A new aircraft type starts in this mode: click the middle of the screen, then drag
+
 ## 1.9.4 - 2026-11-21 - Exact resizing on the cockpit tablet
 - The EFB fills the calibrated area corner to corner: Narrower / Wider and Shorter / Taller each change exactly by the step (it used to keep the iPad's shape, so some presses did nothing and then it jumped)
 - Finer steps: 0.5, 2, 8 and 32 texture pixels; the exact size is shown
