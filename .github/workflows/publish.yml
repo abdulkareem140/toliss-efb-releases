@@ -1,0 +1,43 @@
+name: Publish release
+
+# Turns the plugin on the "updater" branch (what SkunkCrafts Updater installs)
+# into a GitHub release with a ready-to-install zip, when that version has no
+# release yet. Runs whenever this page is updated, or by hand from Actions.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-24.04
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          ref: updater
+          path: depot
+
+      - name: Release the version on the updater branch
+        run: |
+          ver=$(sed -n 's/^version|//p' depot/skunkcrafts_updater.cfg | tr -d '\r')
+          tag="v$ver"
+          if gh release view "$tag" >/dev/null 2>&1; then
+            echo "$tag is already released"
+            exit 0
+          fi
+          # notes: this version's part of CHANGELOG.md
+          awk -v v="$ver" '
+            index($0, "## " v " - ") == 1 {
+              n = split($0, a, " - "); s = a[3]; for (i = 4; i <= n; i++) s = s " - " a[i]
+              print "**" s "**"; print ""; on = 1; next }
+            /^## / { on = 0 }
+            on && NF { print }' CHANGELOG.md > notes.md
+          printf '\nInstall: unzip into `X-Plane 12/Resources/plugins/`, or update with SkunkCrafts Updater.\n' >> notes.md
+          git -C depot archive --format=zip --prefix=ToLiSS_EFB/ -o "$PWD/ToLiSS_EFB_${tag}.zip" HEAD
+          gh release create "$tag" "ToLiSS_EFB_${tag}.zip" --target main --title "ToLiSS EFB ${tag}" --notes-file notes.md
