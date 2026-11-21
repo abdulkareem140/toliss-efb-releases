@@ -3,6 +3,12 @@
 Each version has a one-line summary (used for the Discord announcements and the release list)
 followed by the details.
 
+## 0.7.2 - 2026-11-21 - Takeoff calculator like the ToLiSS one
+- Same layout as the calculator in the ToLiSS tablet, in the Airbus cockpit font; values and labels stay in their own rows on the 3D cockpit tablet
+- Same numbers as the ToLiSS calculator for the A320: CONF, FLEX, V1 range, VR, V2, THS and GREEN DOT
+- Runway picture with the accelerate-stop distances and stop margins at V1 MIN and V1 MAX
+- Wind, OAT and QNH from the sim's own weather at the aircraft; TOW and CG follow the aircraft until you compute
+
 ## 0.7.1 - 2026-11-21 - Downloads move to toliss-efb-releases
 - Downloads, updates and bug reports now live at github.com/abdulkareem140/toliss-efb-releases
 - SkunkCrafts Updater follows the new place by itself after this update

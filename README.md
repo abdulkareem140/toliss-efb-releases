@@ -102,20 +102,28 @@ The real tool Airbus pilots use (FlySmart with Airbus / PEP) runs on Airbus's ce
 performance database, which is licensed to airlines and not publicly available. This calculator
 uses the same inputs and gives the same outputs, but computes them with a physics model:
 
+* **Looks and works like the calculator in the ToLiSS tablet:** the same rows in the same order, labels
+  low on the left and values high on the right in the Airbus cockpit font (B612), cyan inputs and green
+  results, RESET and COMPUTE.
 * **Inputs:** airport and runway from **X-Plane's own airport database** (`apt.dat`: real lengths
-  and true headings), dry/wet, wind, OAT, QNH (one tap fills these from the METAR), takeoff weight
-  (from the aircraft or the plan), CG, flaps (OPT / 1+F / 2 / 3), FLEX/TOGA, anti-ice, packs and slope.
+  and true headings), dry/wet, wind, OAT and QNH (filled in by themselves: the sim's own weather at the
+  aircraft when you're at the airport, like the ToLiSS calculator, otherwise the METAR), takeoff weight
+  and CG (they follow the aircraft while it's loaded, until you compute or type your own), flaps
+  (AUTO / 1+F / 2 / 3), FLEX/TOGA, anti-ice and air conditioning.
 * **Model:** integrates the ground run (thrust lapse with speed and temperature, aerodynamic drag,
   rolling friction, slope) for all engines and one engine out. From that it gets the takeoff
   distance (×1.15 for all engines; 35 ft screen, 15 ft wet), accelerate-stop with 2 s at V1, the
   balanced V1 and the one-engine-out second-segment climb (2.4 % twin / 3.0 % quad). Wind is
   factored 50 % headwind / 150 % tailwind. V2 = 1.13 VS1g, with VMCG/VMCA limits.
-* **Outputs:** the highest legal **FLEX** (max 25 % thrust reduction), V1/VR/V2, THS for the CG,
-  required vs. available distances, wind components, what limits the result, and **OPT CONF**, which
-  picks the flap setting that allows the most FLEX. If no takeoff is legal, it says why and gives
-  the maximum TOW.
+* **Outputs:** CONF (AUTO picks the flap setting that allows the most FLEX), the highest legal
+  **FLEX** (max 25 % thrust reduction), the **V1 range** (lowest to highest legal V1), VR, V2, THS for
+  the CG, GREEN DOT and RTOW. The runway picture shows the accelerate-stop distance at the lowest and
+  highest V1, the runway left over after each stop (STOP MARGIN), the windsock and the crosswind. If no
+  takeoff is legal, it says why and gives the maximum TOW.
 
-Results land close to typical published numbers, but they are **estimates, not certified data**.
+The A320 numbers are matched to the ToLiSS calculator: for the same airport, weight and weather
+(OEGN runway 15, 60.2 t, 32 °C, 227°/11 kt) both give CONF 1+F, FLEX 68, V1 114-138, VR 138, V2 140,
+THS UP0.7 and GREEN DOT 205. They are still **estimates, not certified data**.
 Always compare them with the ToLiSS MCDU PERF TAKE OFF page.
 
 ## ⚠️ First flight: verify the datarefs
@@ -154,4 +162,4 @@ aircraft and the plugin's recent log (your folder names removed). You can also
 ## Licences
 
 ToLiSS EFB: © 2026 Abdulkareem Samman (see `LICENSE`). It includes Dear ImGui (MIT), nlohmann/json (MIT), and the
-Barlow and IBM Plex Mono fonts (SIL Open Font License 1.1).
+Barlow, IBM Plex Mono and B612 fonts (SIL Open Font License 1.1).
