@@ -23,8 +23,10 @@ Everything is drawn in code and nothing is copied from any other product.
 | ![Perf](docs/screenshots/perf_calc.png) | ![Wallpaper](docs/screenshots/home_wallpaper.png) |
 | **Landing calculator** | **Map** |
 | ![Landing](docs/screenshots/landing_calc.png) | ![Map](docs/screenshots/map.png) |
-| **Logbook and landing rate** | **In flight: live ETA** |
-| ![Logbook](docs/screenshots/logbook.png) | ![In flight](docs/screenshots/home_inflight.png) |
+| **Map, zoomed in: airports, VORs, NDBs, airways** | **In flight: live ETA** |
+| ![Map detail](docs/screenshots/map_detail.png) | ![In flight](docs/screenshots/home_inflight.png) |
+| **Logbook and landing rate** | |
+| ![Logbook](docs/screenshots/logbook.png) | |
 
 ## Apps
 
@@ -37,7 +39,7 @@ Everything is drawn in code and nothing is copied from any other product.
 | **Weather** | METAR and TAF from aviationweather.gov, with quick chips for origin, destination, alternate and nearest. Decodes wind, visibility, ceiling, temperature and QNH, and shows a flight-category badge. |
 | **Performance** | **Takeoff calculator** and **landing calculator** laid out like the ToLiSS ones (see below), plus the SimBrief takeoff/landing reports and a wind-component calculator. |
 | **Checklists** | Tap-through normal checklists by phase, with progress and a "next item" highlight. |
-| **Map** | Moving map like a navigation display: the SimBrief route with its waypoints and top of descent, the airports and their runways, the track you flew and your aircraft. Next waypoint, distance to go and ETA. Drag to move, + / - to zoom, ROUTE / PLANE to switch views. |
+| **Map** | An aviation chart: land and sea, coastlines, country borders, lakes and cities, plus X-Plane's own airports, VORs, NDBs and airways (they appear as you zoom in; APT / NAV / AWY switch them). On top: the SimBrief route with its waypoints and top of descent, the track you flew and your aircraft. Next waypoint, distance to go and ETA. Drag to move, + / - or the mouse wheel to zoom, ROUTE / PLANE to switch views. |
 | **Logbook** | Every flight is logged by itself at ON BLOCKS: OUT/OFF/ON/IN, block and air time, fuel used and the **landing rate** (ft/min, G and a grade from BUTTER to HARD), which also pops up right after touchdown. Totals, average and best landing, and an Export CSV button. |
 | **Airline** | AOC messages with your airline (see below) and the **Levant VA** website (https://levant-va.com/), opened in your web browser. The name and address can be changed. |
 | **Settings** | SimBrief ID, kg/lb, passenger weight, cargo split, boarding/cargo/refuel rates, night/day theme, accent colour, **iPad finish** (Space Grey, Silver, Starlight, Blue), brightness and window behaviour. **Background:** gradient presets, three bundled wallpapers or **your own picture**. Press *Upload picture...* to open your computer's file picker, or paste a link to a JPG/PNG. Uploads are kept in `Output/preferences/toliss_efb_wallpapers`, so plugin updates don't delete them. There's also a dim slider. **Cockpit:** calibration of the 3D tablet. **Diagnostics:** dataref mapping (green = found, red = missing) and a live **Explorer** of every dataref. |
@@ -183,4 +185,4 @@ aircraft and the plugin's recent log (your folder names removed). You can also
 ## Licences
 
 ToLiSS EFB: © 2026 Abdulkareem Samman (see `LICENSE`). It includes Dear ImGui (MIT), nlohmann/json (MIT), and the
-Barlow, IBM Plex Mono and B612 fonts (SIL Open Font License 1.1).
+Barlow, IBM Plex Mono and B612 fonts (SIL Open Font License 1.1). Map base layer: Natural Earth (public domain).

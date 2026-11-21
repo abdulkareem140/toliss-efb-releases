@@ -3,6 +3,11 @@
 Each version has a one-line summary (used for the Discord announcements and the release list)
 followed by the details.
 
+## 0.9.0 - 2026-11-21 - The Map becomes an aviation chart
+- Land and sea, coastlines, country borders, lakes and cities (Natural Earth, works offline)
+- X-Plane's own airports, VORs, NDBs and airways, shown as you zoom in; APT / NAV / AWY buttons
+- Your Navigraph data is used when it's in X-Plane's Custom Data folder
+
 ## 0.8.1 - 2026-11-21 - Map buttons, ToLiSS vehicles and doors
 - Map: the + / - / ROUTE / PLANE buttons work; ROUTE shows the route even when the aircraft is parked far away
 - ToLiSS vehicles: animation datarefs are no longer picked by themselves (they can't remove a vehicle)
