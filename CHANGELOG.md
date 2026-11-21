@@ -3,6 +3,9 @@
 Each version has a one-line summary (used for the Discord announcements and the release list)
 followed by the details.
 
+## 1.9.0 - 2026-11-21 - Update notice on the Home screen
+- When a new version is waiting, a banner on the Home screen says so, with What's new (the release notes) and Later
+
 ## 0.9.0 - 2026-11-21 - The Map becomes an aviation chart
 - Land and sea, coastlines, country borders, lakes and cities (Natural Earth, works offline)
 - X-Plane's own airports, VORs, NDBs and airways, shown as you zoom in; APT / NAV / AWY buttons
