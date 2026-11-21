@@ -1,0 +1,42 @@
+# Changelog
+
+Each version has a one-line summary (used for the Discord announcements and the release list)
+followed by the details.
+
+## 0.7.1 - 2026-11-21 - Downloads move to toliss-efb-releases
+- Downloads, updates and bug reports now live at github.com/abdulkareem140/toliss-efb-releases
+- SkunkCrafts Updater follows the new place by itself after this update
+
+## 0.7.0 - 2026-11-21 - Updates through SkunkCrafts, bug reports, smarter takeoff calculator
+- Updates through **SkunkCrafts Updater**; the tablet tells you when a new version is waiting
+- **Report a bug** from the tablet (Settings > About), with diagnostics and your folder names removed
+- Takeoff calculator finds airports by ICAO, IATA or X-Plane's old ID (OKKK/KWI), adds **GREEN DOT**, fills in the METAR by itself
+- Removed the Web app and the 3D tablet model
+
+## 0.6.2 - 2026-11-20 - Livery registration and MSN
+- The tablet reads the livery's registration and MSN; tap it on Home to set your own per livery
+
+## 0.6.1 - 2026-11-20 - Ground Ops Customize fixed
+- Customize tested end to end in the window and on the 3D cockpit tablet
+
+## 0.6.0 - 2026-11-20 - Talk to AOC, ToLiSS vehicles, new takeoff calculator
+- Send AOC delay reports with IATA delay codes, in-range reports, requests, tech log, free text; AOC answers and sends its own messages
+- Automatic OUT / OFF / ON / IN movement messages
+- ToLiSS passenger stairs, catering trucks and baggage loaders in Ground Ops
+- Takeoff calculator redrawn like an Airbus cockpit display, with a runway picture and windsock
+- Departure clock follows the whole flight, to ON BLOCKS; CG shown
+
+## 0.5.0 - 2026-11-20 - Looks like a real iPad
+- Aluminium frame, iPadOS status bar, Home Screen widgets, app icons and a dock, frosted glass
+- iPad frame on the 3D cockpit tablet
+
+## 0.4.0 - 2026-11-20 - Real doors, cabin PA in your voice, AOC stands
+- Real door layout for every ToLiSS type, including BULK
+- Record cabin announcements with your own voice, muffled in the cockpit and clear in the cabin
+- Departure countdown; AOC sends your arrival stand from X-Plane's airport data
+- FlySmart-style takeoff calculator; auto calibration for all types
+
+## 0.1.0 - 0.3.0 - 2026-11-19 - First versions
+- SimBrief OFP, loadsheet with boarding, ground services and doors, weather, performance, checklists
+- Floating, pop-out and VR window, and the 3D cockpit tablet with calibration
+- Wallpapers including your own pictures, Levant VA website

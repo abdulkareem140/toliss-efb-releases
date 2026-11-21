@@ -1,0 +1,27 @@
+name: Bug report
+description: Something on the tablet doesn't work. (Easiest: Settings > About > "Report a bug..." on the tablet fills this in for you.)
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      placeholder: e.g. On the 3D cockpit tablet, Ground Ops > Customize does nothing.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps / what you expected
+      placeholder: 1. Load the A320neo  2. Open Ground Ops  3. Press Customize
+  - type: textarea
+    id: diagnostics
+    attributes:
+      label: Diagnostics
+      description: Plugin version, X-Plane version, operating system, aircraft. The tablet's report adds these automatically.
+      render: text
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots or Log.txt
+      description: Drag images or X-Plane's Log.txt here if you can.
