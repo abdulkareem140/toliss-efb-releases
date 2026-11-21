@@ -3,6 +3,12 @@
 Each version has a one-line summary (used for the Discord announcements and the release list)
 followed by the details.
 
+## 0.8.1 - 2026-11-21 - Map buttons, ToLiSS vehicles and doors
+- Map: the + / - / ROUTE / PLANE buttons work; ROUTE shows the route even when the aircraft is parked far away
+- ToLiSS vehicles: animation datarefs are no longer picked by themselves (they can't remove a vehicle)
+- New Learn button (Ground Ops > Customize): switch the vehicle in the aircraft and the tablet finds its control
+- A message when a door doesn't close (ToLiSS keeps a door open while stairs or a catering truck are at it)
+
 ## 0.8.0 - 2026-11-21 - Live ETA, landing calculator, map and logbook
 - Live ETA after departure from where the aircraft is along the route: status bar, Home and AOC
 - Landing calculator: VLS, VAPP and landing distance with MAX MAN, MED and LO braking, with a runway picture
