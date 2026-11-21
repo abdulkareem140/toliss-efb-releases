@@ -21,18 +21,24 @@ Everything is drawn in code and nothing is copied from any other product.
 | ![Loadsheet](docs/screenshots/loadsheet.png) | ![Ground](docs/screenshots/ground.png) |
 | **Takeoff calculator** | **Custom wallpaper** |
 | ![Perf](docs/screenshots/perf_calc.png) | ![Wallpaper](docs/screenshots/home_wallpaper.png) |
+| **Landing calculator** | **Map** |
+| ![Landing](docs/screenshots/landing_calc.png) | ![Map](docs/screenshots/map.png) |
+| **Logbook and landing rate** | **In flight: live ETA** |
+| ![Logbook](docs/screenshots/logbook.png) | ![In flight](docs/screenshots/home_inflight.png) |
 
 ## Apps
 
 | App | What it does |
 |---|---|
-| **Home** | An iPadOS Home Screen. Widgets: analog UTC clock, today's flight (route, OUT/OFF/ON/IN, block fuel, arrival stand), departure countdown ring, weather and live aircraft weights, pax, doors and CG. Tap a widget to open its app. App icons sit beside the widgets, and the dock at the bottom holds your favourite apps plus the ones you used last. |
+| **Home** | An iPadOS Home Screen. Widgets: analog UTC clock, today's flight (route, OUT/OFF/ON/IN, block fuel, arrival stand), departure countdown ring (after departure: the **live ETA** from where the aircraft is, distance to go and minutes early or late), weather and live aircraft weights, pax, doors and CG. Tap a widget to open its app. App icons sit beside the widgets, and the dock at the bottom holds your favourite apps plus the ones you used last. |
 | **Flight Plan** | Fetches your latest **SimBrief** OFP. Has Summary, Navlog, Fuel breakdown (stacked bar), Weights vs. limits and the full OFP text. The OFP is cached, so it's still there after a restart. |
 | **Loadsheet** | Plan pax, forward and aft cargo and block fuel (from the OFP or by hand). Loads the aircraft **instantly** or **realistically**: boarding, cargo and refuelling run over time with progress bars, pause and stop. Shows planned vs. actual ZFW/TOW/LW against MZFW/MTOW/MLW, and prints a final loadsheet. |
 | **Ground Ops** | Top-down aircraft diagram: tap a door to open or close it. Doors follow the aircraft's real door position, so a door opened from the ToLiSS ISCS shows as open, and doors swing on the diagram while moving. **Ground Power, Wheel Chocks, HP Air and LP Air** are found automatically on your aircraft. The **ToLiSS vehicles** tab drives the aircraft's own passenger stairs (1L, 2L), catering trucks (1R, 2R) and baggage loaders. **Customize** chooses which services are shown and which dataref each one uses. |
 | **Weather** | METAR and TAF from aviationweather.gov, with quick chips for origin, destination, alternate and nearest. Decodes wind, visibility, ceiling, temperature and QNH, and shows a flight-category badge. |
-| **Performance** | **Takeoff calculator** in the style of the airline tools (see below), plus the SimBrief takeoff/landing reports and a wind-component calculator. |
+| **Performance** | **Takeoff calculator** and **landing calculator** laid out like the ToLiSS ones (see below), plus the SimBrief takeoff/landing reports and a wind-component calculator. |
 | **Checklists** | Tap-through normal checklists by phase, with progress and a "next item" highlight. |
+| **Map** | Moving map like a navigation display: the SimBrief route with its waypoints and top of descent, the airports and their runways, the track you flew and your aircraft. Next waypoint, distance to go and ETA. Drag to move, + / - to zoom, ROUTE / PLANE to switch views. |
+| **Logbook** | Every flight is logged by itself at ON BLOCKS: OUT/OFF/ON/IN, block and air time, fuel used and the **landing rate** (ft/min, G and a grade from BUTTER to HARD), which also pops up right after touchdown. Totals, average and best landing, and an Export CSV button. |
 | **Airline** | AOC messages with your airline (see below) and the **Levant VA** website (https://levant-va.com/), opened in your web browser. The name and address can be changed. |
 | **Settings** | SimBrief ID, kg/lb, passenger weight, cargo split, boarding/cargo/refuel rates, night/day theme, accent colour, **iPad finish** (Space Grey, Silver, Starlight, Blue), brightness and window behaviour. **Background:** gradient presets, three bundled wallpapers or **your own picture**. Press *Upload picture...* to open your computer's file picker, or paste a link to a JPG/PNG. Uploads are kept in `Output/preferences/toliss_efb_wallpapers`, so plugin updates don't delete them. There's also a dim slider. **Cockpit:** calibration of the 3D tablet. **Diagnostics:** dataref mapping (green = found, red = missing) and a live **Explorer** of every dataref. |
 
@@ -125,6 +131,21 @@ The A320 numbers are matched to the ToLiSS calculator: for the same airport, wei
 (OEGN runway 15, 60.2 t, 32 °C, 227°/11 kt) both give CONF 1+F, FLEX 68, V1 114-138, VR 138, V2 140,
 THS UP0.7 and GREEN DOT 205. They are still **estimates, not certified data**.
 Always compare them with the ToLiSS MCDU PERF TAKE OFF page.
+
+## Landing calculator
+
+Performance > **Landing calc** works the same way for the arrival: the destination and its runways come from
+X-Plane's airport data (the plan's runway is picked first), the landing distance available (LDA) is the runway
+minus any displaced threshold, and the landing weight follows the flight (what's left after the fuel still to
+burn on the plan) until you type your own.
+
+* **VLS** is 1.23 × the 1-g stall speed in CONF FULL or 3; **VAPP** adds a third of the headwind (5 to 15 kt).
+* **Landing distance** from 50 ft over the threshold: the air distance to touchdown, 2 s to get the spoilers out
+  and the brakes on, then braking at the autobrake rate (LO 1.7, MED 3 m/s²) or the most the runway allows
+  (MAX MANUAL), with the reversers' help. Wind is factored 50 % headwind / 150 % tailwind, and the result × 1.15.
+* The runway picture shows the touchdown point and where you stop with each braking mode, and the runway left over.
+
+These are **estimates, not certified data**. Compare them with the ToLiSS MCDU and your own judgement.
 
 ## ⚠️ First flight: verify the datarefs
 
