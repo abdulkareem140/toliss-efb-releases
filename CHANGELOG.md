@@ -3,6 +3,12 @@
 Each version has a one-line summary (used for the Discord announcements and the release list)
 followed by the details.
 
+## 1.9.8 - 2026-11-21 - Start the aircraft from the tablet, BULK door fixed
+- Ground Ops > Startup works from the tablet, no ISCS: ENG 1 / ENG 2 start, APU start, ADIRS align and the aircraft states (engines running, ADIRU + APU, external power, cold + dark)
+- The tablet works ToLiSS's own cockpit switches step by step (batteries, ADIRS, APU master and start, bleed, beacon, engine mode, masters), waits for APU AVAIL and each engine, and shows the step it is on, with Cancel
+- New ADIRS light (how many IRs are in NAV)
+- BULK door: follows the real door position (A320neo: its own value) and tries each way to open it until the door moves; no more "did not open" warning
+
 ## 1.9.7 - 2026-11-21 - Startup page, new map, real CPDLC and telex
 - Ground Ops > Startup: live engine and APU gauges, power lights, the start sequence, quick starts and aircraft states (found on the aircraft by name, else they open the ISCS)
 - Ground Ops redesigned: door and service tiles; the BULK door works; no more false "door didn't move" warnings
