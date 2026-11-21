@@ -3,6 +3,11 @@
 Each version has a one-line summary (used for the Discord announcements and the release list)
 followed by the details.
 
+## 1.9.2 - 2026-11-21 - Airport charts, and the ToLiSS vehicles explained
+- Map: zoom in on an airport, or press ARPT, for its chart: aprons, taxiways with names, runways with numbers, stands
+- Far-away airports are drawn smaller so the map stays readable
+- ToLiSS vehicles: ToLiSS lets only its ISCS call its stairs, catering trucks and belt loaders, so the tab now opens the ISCS (no more switches that couldn't work); old vehicle choices are forgotten
+
 ## 1.9.1 - 2026-11-21 - A clean start every time
 - When X-Plane starts, the last flight is deleted, so no old flight shows up hours late. Turn on Settings > Keep the last flight when X-Plane starts to keep it
 
