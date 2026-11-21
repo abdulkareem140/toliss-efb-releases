@@ -67,12 +67,6 @@ area edge to edge. The first time on a new type, just click the middle of the sc
 
 ![Fit on the tablet](docs/screenshots/cockpit_edit.png)
 
-**On the tablet's AviTab page instead:** *Settings → Cockpit → Draw in the ToLiSS AviTab area* uses the area
-ToLiSS reserves for AviTab (`AviTab.json` in the aircraft folder; built in when it's missing: A319/A320/A321 left
-2119, bottom 9, A330-900/A340-600 left 142, bottom 16, both 1024 × 640). The EFB then shows only on the ToLiSS
-tablet's AviTab page, not on its normal screen; turn AviTab off (*Plugins → AviTab → Enabled*). *Back to my
-calibration* undoes it.
-
 Or calibrate with a gesture:
 
 1. Sit in the 3D cockpit, looking at the tablet so its whole screen is visible.

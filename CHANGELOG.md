@@ -3,6 +3,9 @@
 Each version has a one-line summary (used for the Discord announcements and the release list)
 followed by the details.
 
+## 1.9.6 - 2026-11-21 - AviTab option removed
+- Removed "Draw in the ToLiSS AviTab area": fit the EFB on the tablet's own screen with Fit on the tablet instead
+
 ## 1.9.5 - 2026-11-21 - Fit the EFB right on the tablet
 - Edit mode on the 3D tablet: drag the corners or edges to the screen's edges, the middle to move it, ROTATE, DONE - the EFB fills it edge to edge
 - Start it from Settings > Cockpit > Fit on the tablet, or Plugins > ToLiSS EFB > Fit cockpit tablet
