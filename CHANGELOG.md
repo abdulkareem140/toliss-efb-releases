@@ -3,6 +3,9 @@
 Each version has a one-line summary (used for the Discord announcements and the release list)
 followed by the details.
 
+## 1.9.1 - 2026-11-21 - A clean start every time
+- When X-Plane starts, the last flight is deleted, so no old flight shows up hours late. Turn on Settings > Keep the last flight when X-Plane starts to keep it
+
 ## 1.9.0 - 2026-11-21 - Update notice on the Home screen
 - When a new version is waiting, a banner on the Home screen says so, with What's new (the release notes) and Later
 
