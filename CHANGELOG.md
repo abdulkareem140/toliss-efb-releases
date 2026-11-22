@@ -3,6 +3,11 @@
 Each version has a one-line summary (used for the Discord announcements and the release list)
 followed by the details.
 
+## 1.9.9 - 2026-11-22 - Aircraft states closer to ToLiSS
+- Cold + dark also switches all six fuel pumps and the crew oxygen supply off
+- External power, ADIRU + APU, Engines running and the engine start tiles switch the fuel pumps (and crew oxygen) back on first
+- ADIRU + APU and Engines running switch EXT PWR off once the APU powers the aircraft
+
 ## 1.9.8 - 2026-11-21 - Start the aircraft from the tablet, BULK door fixed
 - Ground Ops > Startup works from the tablet, no ISCS: ENG 1 / ENG 2 start, APU start, ADIRS align and the aircraft states (engines running, ADIRU + APU, external power, cold + dark)
 - The tablet works ToLiSS's own cockpit switches step by step (batteries, ADIRS, APU master and start, bleed, beacon, engine mode, masters), waits for APU AVAIL and each engine, and shows the step it is on, with Cancel
