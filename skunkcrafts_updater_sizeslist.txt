@@ -1,0 +1,21 @@
+CHANGELOG.md|9024
+LICENSE|1075
+README.md|15416
+64/lin.xpl|5346392
+64/win.xpl|6636451
+resources/cockpit_presets.ini|560
+resources/datarefs.ini|5435
+resources/fonts/B612-Regular.ttf|153192
+resources/fonts/Barlow-Bold.ttf|108220
+resources/fonts/Barlow-Medium.ttf|103536
+resources/fonts/Barlow-Regular.ttf|104068
+resources/fonts/Barlow-SemiBold.ttf|108348
+resources/fonts/IBMPlexMono-Regular.ttf|135580
+resources/fonts/OFL-B612.txt|4470
+resources/fonts/OFL-Barlow.txt|4377
+resources/fonts/OFL-IBMPlexMono.txt|4456
+resources/map/README.txt|203
+resources/map/basemap.bin|2642107
+resources/wallpapers/Above the Clouds.jpg|57165
+resources/wallpapers/Dusk Approach.jpg|66866
+resources/wallpapers/Night Glow.jpg|79876
