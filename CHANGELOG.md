@@ -3,6 +3,11 @@
 Each version has a one-line summary (used for the Discord announcements and the release list)
 followed by the details.
 
+## 1.9.11 - 2026-11-23 - AOC messages on the MCDU, callsign from SimBrief
+- AOC messages from the tablet (gate, delay answers, weather...) also go to the aircraft: they show on the MCDU, ATSU > AOC > REC MSGS, while the ToLiSS ATSU is online on Hoppie
+- New setting: Send AOC messages to the aircraft (on by default)
+- The ACARS callsign comes from SimBrief by itself: airline code + flight number, the same as the MCDU FLT NBR
+
 ## 1.9.10 - 2026-11-23 - Smooth door progress, aircraft ATSU status
 - Doors that move in steps (the bulk door) show "Moving" smoothly up to 100% instead of flicking between Moving and Open
 - AOC: when shared with the aircraft, a light shows whether the ToLiSS ATSU is logged on to Hoppie as your callsign, with what to check if it isn't
