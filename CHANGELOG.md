@@ -3,6 +3,10 @@
 Each version has a one-line summary (used for the Discord announcements and the release list)
 followed by the details.
 
+## 1.9.10 - 2026-11-23 - Smooth door progress, aircraft ATSU status
+- Doors that move in steps (the bulk door) show "Moving" smoothly up to 100% instead of flicking between Moving and Open
+- AOC: when shared with the aircraft, a light shows whether the ToLiSS ATSU is logged on to Hoppie as your callsign, with what to check if it isn't
+
 ## 1.9.9 - 2026-11-22 - Aircraft states closer to ToLiSS
 - Cold + dark also switches all six fuel pumps and the crew oxygen supply off
 - External power, ADIRU + APU, Engines running and the engine start tiles switch the fuel pumps (and crew oxygen) back on first
